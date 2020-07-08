@@ -21,7 +21,9 @@ function contactUs() {
                     <div className="container margin-top-50">
                         <div className="row" style={{ alignItems: 'start' }}>
                             <div className="col mt-5">
-                                <form name="contact-form" netlify action="/success">
+                                <form name="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
+                                    <input type="hidden" name="form-name" value="contact-form" />
+                                    
                                     <div className="form-group">
                                         <input type="text" name="fullName" placeholder="Full Name" className="form-control" required />
                                     </div>
