@@ -41,10 +41,6 @@ function AboutUs() {
                     Our specialist will take care of all your troubles with eaes.
                     We can provide services in the following areas.
                     </p>
-                    <p className="service-intro mb-4">From modern solar roof installments to mess kitchen you will get it done all in one place.
-                    Our specialist will take care of all your troubles with eaes.
-                    We can provide services in the following areas.
-                    </p>
                     <ArrowLine className="arrow-line" />
                     <div className="container" >
                         <div className="row flex-reverse margin-top-50">
