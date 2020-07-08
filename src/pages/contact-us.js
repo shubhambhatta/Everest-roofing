@@ -20,7 +20,7 @@ function contactUs() {
                     <div className="container margin-top-50">
                         <div className="row" style={{ alignItems: 'start' }}>
                             <div className="col mt-5">
-                                <form method="get">
+                                <form name="contact-form" method="POST" data-netlify="true">
                                     <div className="form-group">
                                         <input type="text" name="fullName" placeholder="Full Name" className="form-control" required />
                                     </div>
