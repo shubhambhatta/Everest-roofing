@@ -4,7 +4,8 @@ import Layout from '../components/layout'
 import ArrowLine from '../components/assets/svg/ArrowLine.svg';
 import SEO from '../components/seo';
 
-function contactUs() {
+function contactUs() { 
+    //method="POST" data-netlify="true"
     return (
         <BodyClassName className="services-body">
             <Layout>
@@ -20,7 +21,7 @@ function contactUs() {
                     <div className="container margin-top-50">
                         <div className="row" style={{ alignItems: 'start' }}>
                             <div className="col mt-5">
-                                <form name="contact-form" method="POST" data-netlify="true" action="/success">
+                                <form name="contact-form" netlify action="/success">
                                     <div className="form-group">
                                         <input type="text" name="fullName" placeholder="Full Name" className="form-control" required />
                                     </div>
