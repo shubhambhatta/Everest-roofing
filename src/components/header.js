@@ -1,34 +1,21 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from './assets/svg/everestRoofingLogo.svg';
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <div className="header">
+    <div className="logoGroup">
+    <Logo />
+    <p> Everest Roofing {'&'} Plumbing</p>
     </div>
-  </header>
+    <ul className="header-list">
+      <li className="header-items"><Link to="/" activeClassName="active">Home</Link></li>
+      <li className="header-items"><Link to="/services" activeClassName="active">Services</Link></li>
+      <li className="header-items"><Link to="/about-us" activeClassName="active">About Us</Link></li>
+      <li className="header-items"><Link to="/contact-us" activeClassName="active">Contact Us</Link></li>
+    </ul>
+  </div>
 )
 
 Header.propTypes = {

@@ -2,21 +2,27 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import BodyClassName from "react-body-classname"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <BodyClassName className="my-index">
+    <Layout footerClassName="bottom_0">
+      <SEO title="Everest Roofings" />
+      <div className="homepage_gradient"></div>
+      <div className="hompage_heading">
+        {/* <div> */}
+        <p className="heading_one">Roofs built to last longest</p>
+        <p className="heading_one_caption">We make modern roofs by the industry experts</p>
+        {/* </div> */}
+        <Link to='/services'>
+          <div className="learn_more">
+            Learn More
+      </div>
+        </Link>
+      </div>
+    </Layout>
+  </BodyClassName>
 )
 
 export default IndexPage

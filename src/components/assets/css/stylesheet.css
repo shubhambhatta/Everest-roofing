@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.my-index{
+    background: url('../../../images/juan-carlos-becerra-wSM0gY3OReU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    min-height: 1237px;
+}
+.services-body{
+    width: 100%;
+    background: url('../../../images/cropedBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow-x: hidden;
+    height: 405px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.active{
+    color: #EB5757;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0px 10px;
+    /* margin: 0rem 6.25rem; */
+}
+
+.header-list{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(0, 66, 109, 0.77);
+    border-radius: 6px;
+    padding: 18px 0px;
+    width: max-content;
+}
+.header-items{
+    padding:0rem 1rem;
+    display: flex;
+    align-items: center;
+/* Gray 6 */
+    color: #F2F2F2;
+    flex: none;
+    order: 3;
+    align-self: center;
+}
+.logoGroup{
+    display:flex;
+
+}
+.logoGroup p{
+    color: white;
+    font-size: 18px;
+    width: 135px;
+    margin-left: 10px;
+}
+footer{
+    position: absolute;
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    /* bottom: 0; */
+    width: 100%;
+    z-index: 1;
+    background: #222222;    
+}
+.bottom_0{
+    bottom:0;
+}
+
+footer p{
+    width: 16rem;
+    color: white;
+    /* font-size: 0.8rem; */
+}
+.footer_social{
+    display:flex;
+    justify-content: space-between;
+    /* width: 21.25rem; */
+    width: 80%;
+    padding: 10px 10px;
+}
+.intersection{
+    width: 98%;
+    border: 1px dashed grey;
+}
+/* .homepage_gradient{
+    position: absolute;
+    width: 600px;
+    height: 876px;
+    left: 50%;
+    margin-left:-300px;
+    top: 300px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(249, 224, 194, 0.242) 0%, rgba(229, 229, 229, 0) 100%);
+} */
+
+.hompage_heading{
+    top: 10px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+.heading_one{
+    color:#E7B626;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    /* line-height: 72px; */
+    max-width: 800px;
+    text-align: center;
+    text-transform: uppercase;
+    float: right;
+}
+.heading_one_caption{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #E5E5E5;
+}
+.learn_more{
+    position: fixed;
+    bottom:145px;
+    left: 50%;
+    margin-left:-66px;
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+/**SERVICE PAGE*/
+.services-heading {
+    text-align: center;
+    margin-top: 415px;
+    
+}
+
+.services-heading h3{
+    position: relative;
+    color: #00426D;
+    font-size: 48px;
+}
+.arrow-line{
+    /* border: 1px dashed #000000; */
+    /* margin: 0px 50px; */
+    width: 90vw;
+}
+.service-intro {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px 10px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.container{
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 7.5rem;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    
+}
+.col, .col img{
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.col p{
+    /* height: 189px; */
+text-align: justify;
+padding: 0px 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;                                                                                  
+}
+.col h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center; 
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    box-sizing: border-box;
+    /* border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px; */
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background-color: #fafafa !important;
+    border: 0px none !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+    margin:0;
+    font-family: inherit;
+}
+.btn-submit{
+    background: #F0BC5E;
+    border-radius: 4px;
+    border:none;
+    color:white;
+    width: 120px;
+    height: 44px;
+    cursor: pointer;
+}
+
+@media (min-width: 992px){
+    .header{
+        margin: 1rem 6.25rem; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .row {
+        -ms-flex-direction: row!important;
+        flex-direction: row!important;
+    }
+    .flex-reverse{
+        flex-direction: row-reverse !important;
+    }
+    .col{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    footer{
+        flex-direction: row;
+    }
+    footer .footer_social{
+        width: 21.25rem;
+        margin-right:100px; 
+    }
+    footer p{
+        margin-left: 100px;
+    }
+    .intersection{
+    display:none;
+    }
+    .service-intro{
+        margin:0px 100px;
+    }
+    .hompage_heading{
+        top:110px;
+    }
+    .homepage_gradient{
+        position: absolute;
+        width: 976px;
+        height: 976px;
+        left: 50%;
+        margin-left:-488px;
+        top: 300px;
+
+        background: radial-gradient(50% 50% at 50% 50%, rgba(249, 224, 194, 0.242) 0%, rgba(229, 229, 229, 0) 100%);
+    }
+}

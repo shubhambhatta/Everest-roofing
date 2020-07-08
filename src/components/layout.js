@@ -10,9 +10,15 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
+import LogoInsta from './assets/svg/insta.svg';
+import LogoTwitter from './assets/svg/twitter.svg';
+import LogoFacebook from './assets/svg/facebook.svg';
+import './assets/css/stylesheet.css';
+import './assets/css/myBootstrap.css';
+import { Helmet } from "react-helmet";
 
-const Layout = ({ children }) => {
+const Layout = ({ children,...props }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,20 +32,20 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+        
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer className={props.footerClassName}>
+          <p>
+            © {new Date().getFullYear()}, Everest roofings and plumbing
+            Sydney Austrilia,+977 01 123456
+          </p>
+      <div className="intersection" />
+          <div className="footer_social">
+            <LogoTwitter />
+            <LogoFacebook />
+            <LogoInsta />
+          </div>
         </footer>
-      </div>
     </>
   )
 }
