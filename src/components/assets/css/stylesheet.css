@@ -2,12 +2,15 @@ body{
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
 }
 .my-index{
     background: url('../../../images/juan-carlos-becerra-wSM0gY3OReU-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    height: calc(16px+100vh);
     width: 100%;
     min-height: 1237px;
 }
@@ -32,9 +35,7 @@ a{
     flex-direction: column;
     align-items: flex-start;
     align-items: center;
-    margin-top: 1rem;
     padding: 0px 10px;
-    /* margin: 0rem 6.25rem; */
 }
 
 .header-list{
@@ -59,13 +60,18 @@ a{
 }
 .logoGroup{
     display:flex;
+    align-items: center;
 
+}
+.regular_logo{
+    display: none;
 }
 .logoGroup p{
     color: white;
     font-size: 18px;
     width: 135px;
     margin-left: 10px;
+    line-height: normal;
 }
 footer{
     position: absolute;
@@ -85,7 +91,7 @@ footer{
 footer p{
     width: 16rem;
     color: white;
-    /* font-size: 0.8rem; */
+    font-size: 1rem;
 }
 .footer_social{
     display:flex;
@@ -121,7 +127,9 @@ footer p{
     color:#E7B626;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    /* font-size: 48px; */
     /* line-height: 72px; */
     max-width: 800px;
     text-align: center;
@@ -132,8 +140,10 @@ footer p{
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    /* font-size: 24px; */
+    /* line-height: 36px; */
     color: #E5E5E5;
 }
 .learn_more{
@@ -150,8 +160,7 @@ footer p{
 /**SERVICE PAGE*/
 .services-heading {
     text-align: center;
-    margin-top: 415px;
-    
+    margin-top: 270px;    
 }
 
 .services-heading h3{
@@ -256,6 +265,9 @@ textarea {
 }
 
 @media (min-width: 992px){
+    .my-index{
+        overflow: hidden;
+    }
     .header{
         margin: 1rem 6.25rem; 
         flex-direction: row;
@@ -304,5 +316,14 @@ textarea {
         top: 300px;
 
         background: radial-gradient(50% 50% at 50% 50%, rgba(249, 224, 194, 0.242) 0%, rgba(229, 229, 229, 0) 100%);
+    }
+    .services-heading {
+    margin-top: 415px;    
+    }
+    .regular_logo{
+        display: inline;
+    }
+    .mobile_logo{
+        display:none;
     }
 }
