@@ -2,17 +2,21 @@ body{
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+}
+#gatsby-focus-wrapper{
+    /* gatsby-focus-wrapper */
+    padding-bottom: 126px;
 }
 .my-index{
     background: url('../../../images/juan-carlos-becerra-wSM0gY3OReU-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: calc(16px+100vh);
     width: 100%;
-    min-height: 1237px;
+    /* min-height: 1237px; */
+    min-height: 100vh;
 }
 .services-body{
     width: 100%;
@@ -34,7 +38,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding: 0px 10px;
 }
 
@@ -47,6 +51,7 @@ a{
     border-radius: 6px;
     padding: 18px 0px;
     width: max-content;
+    align-self: center;
 }
 .header-items{
     padding:0rem 1rem;
@@ -325,5 +330,11 @@ textarea {
     }
     .mobile_logo{
         display:none;
+    }
+}
+
+@media (min-width:3840){
+    body{
+        font-size: 28px;
     }
 }
