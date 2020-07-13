@@ -1,9 +1,14 @@
+html{
+    height: 100%;
+    width: 100%;
+}
 body{
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
      font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
     /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+    /* min-height: 100vh; */
 }
 #gatsby-focus-wrapper{
     /* gatsby-focus-wrapper */
@@ -13,10 +18,11 @@ body{
     background: url('../../../images/juan-carlos-becerra-wSM0gY3OReU-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    width: 100%;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    /* width: 100%; */
     /* min-height: 1237px; */
-    min-height: 100vh;
+    /* height: 100%; */
 }
 /* .services-body{
     width: 100%;
@@ -68,6 +74,7 @@ a{
     padding: 18px 0px;
     width: max-content;
     align-self: center;
+    margin:0;
 }
 .header-items{
     padding:0rem 0.6rem;
@@ -104,6 +111,7 @@ footer{
     width: 100%;
     z-index: 1;
     background: #222222;    
+    font-size: 14px;
 }
 .bottom_0{
     bottom:0;
@@ -112,7 +120,7 @@ footer{
 footer p{
     width: 16rem;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .footer_social{
     display:flex;
@@ -120,6 +128,9 @@ footer p{
     /* width: 21.25rem; */
     width: 80%;
     padding: 10px 10px;
+}
+.footer_social svg{
+    height: 1.25rem;
 }
 .intersection{
     width: 98%;
@@ -290,9 +301,12 @@ textarea {
         overflow: hidden;
     }
     .header{
-        padding: 1rem 6.25rem 25.3125rem 6.25rem; 
+        padding: 1rem 6.25rem; 
         flex-direction: row;
         justify-content: space-between;
+    }
+    .header_background{
+         padding: 1rem 6.25rem 25.3125rem 6.25rem; 
     }
     .header-items{
         padding: 0rem 1rem;
