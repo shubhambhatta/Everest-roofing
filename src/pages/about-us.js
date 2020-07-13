@@ -20,7 +20,7 @@ function AboutUs() {
     `);
     return (
         <BodyClassName className="services-body">
-            <Layout>
+            <Layout headerClass="header_background">
                 <SEO title="Everest Roofings | About Us" />
 
                 <div className="services-heading">

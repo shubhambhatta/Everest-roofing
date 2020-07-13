@@ -7,7 +7,7 @@ body{
 }
 #gatsby-focus-wrapper{
     /* gatsby-focus-wrapper */
-    padding-bottom: 126px;
+    /* padding-bottom: 126px; */
 }
 .my-index{
     background: url('../../../images/juan-carlos-becerra-wSM0gY3OReU-unsplash.jpg');
@@ -18,7 +18,16 @@ body{
     /* min-height: 1237px; */
     min-height: 100vh;
 }
-.services-body{
+/* .services-body{
+    width: 100%;
+    background: url('../../../images/cropedBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow-x: hidden;
+    height: 405px;
+} */
+.my-images{
     width: 100%;
     background: url('../../../images/cropedBackground.png');
     background-repeat: no-repeat;
@@ -40,8 +49,15 @@ a{
     align-items: flex-start;
     align-items: flex-start;
     padding: 0px 10px;
-}
 
+}
+.header_background{
+    background: url('../../../images/cropedBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow-x: hidden;
+}
 .header-list{
     list-style: none;
     display:flex;
@@ -54,7 +70,7 @@ a{
     align-self: center;
 }
 .header-items{
-    padding:0rem 1rem;
+    padding:0rem 0.6rem;
     display: flex;
     align-items: center;
 /* Gray 6 */
@@ -165,7 +181,7 @@ footer p{
 /**SERVICE PAGE*/
 .services-heading {
     text-align: center;
-    margin-top: 270px;    
+    /* margin-top: 270px;     */
 }
 
 .services-heading h3{
@@ -274,9 +290,12 @@ textarea {
         overflow: hidden;
     }
     .header{
-        margin: 1rem 6.25rem; 
+        padding: 1rem 6.25rem 25.3125rem 6.25rem; 
         flex-direction: row;
         justify-content: space-between;
+    }
+    .header-items{
+        padding: 0rem 1rem;
     }
     .container {
         max-width: 960px;
@@ -322,9 +341,9 @@ textarea {
 
         background: radial-gradient(50% 50% at 50% 50%, rgba(249, 224, 194, 0.242) 0%, rgba(229, 229, 229, 0) 100%);
     }
-    .services-heading {
+    /* .services-heading {
     margin-top: 415px;    
-    }
+    } */
     .regular_logo{
         display: inline;
     }

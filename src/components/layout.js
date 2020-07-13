@@ -18,7 +18,7 @@ import './assets/css/stylesheet.css';
 import './assets/css/myBootstrap.css';
 import { Helmet } from "react-helmet";
 
-const Layout = ({ children,...props }) => {
+const Layout = ({headerClass = "", children,...props }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,8 +31,8 @@ const Layout = ({ children,...props }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-        
+      <Header siteTitle={data.site.siteMetadata.title} headerClass={headerClass}/>
+
         <main>{children}</main>
         <footer className={props.footerClassName}>
           <p>

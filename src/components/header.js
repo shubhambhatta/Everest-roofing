@@ -4,8 +4,8 @@ import React from "react"
 import Logo from './assets/svg/everestRoofingLogo.svg';
 import LogoMobile from './assets/svg/LogoMobile.svg';
 
-const Header = ({ siteTitle }) => (
-  <div className="header">
+const Header = ({ siteTitle, headerClass }) => (
+  <div className={`header ${headerClass}`}>
     <div className="logoGroup">
       {/* Smaller logo for mobile devices */}
       <div className="mobile_logo">
